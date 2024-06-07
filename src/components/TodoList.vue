@@ -10,7 +10,7 @@
         <li v-for="todo in filteredTodos" :key="todo.id" class="todo-item">
           <VaCheckbox v-model="todo.done" class="todo-checkbox"/>
           <span :class="{ done: todo.done }" class="todo-text">{{ todo.text }}</span>
-          <VaButton color="danger" @click="removeTodo(todo)" class="btn delete-btn">Danger </VaButton>
+          <VaButton color="danger" @click="removeTodo(todo)" class="btn delete-btn">Delete</VaButton>
         </li>
       </ul>
       <VaButton
